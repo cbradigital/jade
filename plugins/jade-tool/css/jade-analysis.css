@@ -1,0 +1,224 @@
+.hwt-container {
+    display: inline-block;
+    position: relative;
+    overflow: hidden !important;
+    -webkit-text-size-adjust: none !important;
+    border: 1px #cccccc solid;
+
+}
+
+.divTableCell {
+	vertical-align: top;
+}
+
+#overall-male-slider {
+	vertical-align: -webkit-baseline-middle;
+}
+
+#overall-female-slider {
+	vertical-align: -webkit-baseline-middle;
+}
+
+#overall-younger-slider {
+	vertical-align: -webkit-baseline-middle;
+}
+
+#overall-elder-slider {
+	vertical-align: -webkit-baseline-middle;
+}
+
+.hwt-backdrop {
+    position: absolute !important;
+    top: 0 !important;
+    right: -99px !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    padding-right: 99px !important;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+
+
+    background-color: #fafafa;
+}
+
+.hwt-highlights {
+    width: auto !important;
+    height: auto !important;
+    border-color: transparent !important;
+    white-space: pre-wrap !important;
+    word-wrap: break-word !important;
+    color: #666666 !important;
+    overflow: hidden !important;
+}
+
+.hwt-input {
+    display: block !important;
+    position: relative !important;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    font: inherit;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    color: transparent !important;
+
+}
+
+.hwt-content {
+    background: none transparent !important;
+    font-style: italic;
+    overflow-y: scroll;
+    min-width: 450px;
+	max-width: 470px; /*470*/
+	min-height: 300px;
+	max-height: 900px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#jade-title-highlight.hwt-content {
+    height: 44px;
+    min-height: 40px;
+}
+
+#jade-title {
+    min-width: 450px;
+	max-width: 470px;
+}
+
+textarea#jade-employer, textarea#jade-jobdescription, textarea#jade-requirementprofil, textarea#jade-weoffer {
+    min-height: 300px;
+    min-width: 470px;
+	max-width: 470px;
+}
+
+
+.hwt-content mark {
+    padding: 0 !important;
+    color: inherit;
+}
+
+/*BIS HIER AUSKOMMENTIEREN, WENN PDF GENERIERT WERDEN SOLL */
+
+mark.mark-notfound          { background-color: #daddda; }
+mark.mark-male              { background-color: #577de4; color: white !important; }
+mark.mark-male-underline    { background-color: #577de4; padding-bottom: 5px !important;}
+mark.mark-female            { background-color: #f29493; }
+mark.mark-female-underline  { background-color: #f29493; padding-bottom: 5px !important;}
+mark.mark-younger           { background-color: #82db85; }
+mark.mark-younger-underline { background-color: #82db85; padding-bottom: 5px !important;}
+mark.mark-elder             { background-color: #fcff77; }
+mark.mark-elder-underline   { background-color: #fcff77; padding-bottom: 5px !important;}
+
+/* Print Popup */
+
+/* The Modal (background) */
+#print-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.print-modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 2px solid #003361;
+    width: 250px; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.print-modal-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.print-modal-close:hover,
+.print-modal-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* ! PDF KLASSE SOLL AKTIVIERT WERDEN WENN PDF GENERIEREN ! */
+.hwt-container-pdf {
+    display: inline-block;
+    position: relative !important;
+    overflow: hidden !important;
+    -webkit-text-size-adjust: none !important;
+    border: 1px #cccccc solid;
+	padding: 10px;
+	max-width: 500px;
+}
+
+.hwt-backdrop-pdf {
+    position: absolute !important;
+	top: 0 !important;
+    right: -99px !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    padding-right: 999px !important;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+	
+    background-color: #fafafa;
+}
+
+.hwt-highlights-pdf {
+    width: auto !important;
+    height: auto !important;
+    /*border-color: transparent !important;*/
+    white-space: pre-wrap !important;
+    word-wrap: break-word !important;
+    color: #666666 !important;
+    overflow: hidden !important;
+}
+
+/*.hwt-input-pdf {
+    display: block !important;
+    position: relative !important;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    font: inherit;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    color: transparent !important;
+}*/
+
+.hwt-content-pdf {
+    background: none transparent !important;
+    font-style: italic;
+    overflow-y: scroll;
+    min-width: 650px;
+	max-width: 770px;
+	min-height: 300px;
+	max-height: 900px;
+    padding: 10px;
+}
+
+#jade-title-highlight.hwt-content-pdf {
+    height: 244px;
+    min-height: 40px;
+}
+
+.hwt-content-pdf mark {
+    padding-right: 100px !important;
+    color: inherit;
+}
+
+.divCellSVG-pdf {
+    width: 1200px; /*1200*/
+}

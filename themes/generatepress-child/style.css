@@ -1,0 +1,13 @@
+/*
+ Theme Name:   CBRA (GeneratePress-Child)
+ Description:  Child-Theme für JADE
+ Author:       CBRA
+ Author URI:   https://www.cbra-media.com
+ Template:     generatepress
+ Version:      1.0
+ Text Domain:  cb-gp-child
+*/
+
+.featured-image {
+	display: none !important;
+}
