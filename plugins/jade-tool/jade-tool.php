@@ -47,7 +47,7 @@ function wpb_hook_javascript() {
 
   $printPDF = plugin_dir_url( __FILE__ ) . "/js/html2pdf.bundle.min.js";
   //$printPDF = plugin_dir_url( __FILE__ ) . "/js/pspdfkit.min.js";
-  //$printPDF = "https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js";
+  // $printPDF = "https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js";
 
 
   if (is_page (PAGEID_JADE_START)) {

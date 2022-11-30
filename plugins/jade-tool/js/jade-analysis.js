@@ -83,8 +83,6 @@ function initWithData() {
     jade.jobData[key] = jade.jobData[key].replaceAll('\\"', '"');
     jQuery("#" + key + "-highlight").val(jade.jobData[key]);
 
-    console.log(jade.jobData[key]);
-
     // get the title
     if (key == "jade-title") jade.title = jade.jobData[key];
 
