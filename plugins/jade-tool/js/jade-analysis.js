@@ -153,24 +153,28 @@ function initWithData() {
       var colorClass = jade.findColorClass(row.expression);
 
       // If the word does not exist
-      if (words.findIndex((e) => e.highlight == row.word) == -1) {
+      if (words.findIndex((e) => e.word == row.word) == -1) {
         // Add
         words.push({
-          highlight: row.word,
+          highlight: modifyHighlight(row.word),
           className: colorClass,
+          word: row.word,
         });
 
         // If the word exists, with different color
       } else if (
         words.findIndex(
-          (e) => e.highlight == row.word && e.className != colorClass
+          (e) => e.word == row.word && e.className != colorClass
         ) >= 0
       ) {
         words.push({
-          highlight: row.word,
+          highlight: modifyHighlight(row.word),
           className: colorClass + "-underline",
+          word: row.word,
         });
+        console.log("colorClass = " + colorClass);
       }
+      console.log(words);
     }
 
     // Highlight
@@ -178,6 +182,11 @@ function initWithData() {
       highlight: words,
     });
   }
+}
+
+// replace word with RegEx
+function modifyHighlight(word) {
+  return new RegExp("(?<=\\b)" + word + "(?=\\b)", "gim");
 }
 
 jade.preparePrintPDF = () => {
